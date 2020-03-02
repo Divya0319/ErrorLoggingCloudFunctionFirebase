@@ -24,7 +24,7 @@ exports.sendNotification = functions.firestore.document("Users/{user_id}/Notific
 			const from_name = result[0].data().name;
 			const to_name = result[1].data().name;
 			const token_id = result[1].data().token_id;
-			console.log("From: "+ from_name +"| To: " + to_name + "| Error: " + error + "| TimeStamp: " + timeStamp);
+			console.log("From: "+ from_name +"| To: " + to_name + "| Error: " + error + "|TimeStamp: " + timeStamp);
 
 			const payload = {
 			notification :{
